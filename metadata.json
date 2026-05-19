@@ -1,0 +1,8 @@
+{
+  "name": "شذى | Shadha",
+  "description": "تطبيق ذكي لاكتشاف وتحليل العطور عبر الذكاء الاصطناعي، يتيح لك مقارنة النوتات العطرية، معرفة أسعار المتاجر، والدخول في مجتمع العطور.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

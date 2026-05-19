@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Inter", sans-serif;
+  --font-display: "Cairo", sans-serif;
+  
+  --color-gold-50: #fcfaf2;
+  --color-gold-100: #faf5e6;
+  --color-gold-200: #f5ecd0;
+  --color-gold-300: #ebd59b;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #b38f24;
+  --color-gold-650: #937318;
+  --color-gold-900: #4a3b0c;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9F8F6] text-[#2D2D2D] antialiased font-sans selection:bg-[#D4AF37]/30 selection:text-[#1A1A1A];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-[#1A1A1A];
+  }
+}
+
+/* Custom visual utilities representing Clean Minimalism with gold accents and light premium vibes */
+.shadow-gold {
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.08), 0 2px 4px rgba(229, 225, 218, 0.3);
+}
+
+.shadow-gold-heavy {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.12), 0 4px 6px rgba(229, 225, 218, 0.4);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #FFFDFB 0%, #F5F2EB 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #f5ecd0, #D4AF37, #4a3b0c) 1;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at top, rgba(212, 175, 55, 0.06) 0%, rgba(249, 248, 246, 0) 75%);
+}
+
+/* Pulse animation for scanning process */
+@keyframes scannedLine {
+  0% { transform: translateY(0%); opacity: 0.8; }
+  50% { transform: translateY(100%); opacity: 0.3; }
+  100% { transform: translateY(0%); opacity: 0.8; }
+}
+
+.animate-scan {
+  animation: scannedLine 3.5s ease-in-out infinite;
+}
+
+/* Premium Scrollbar for Arabic list layout */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F8F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E1DA;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
